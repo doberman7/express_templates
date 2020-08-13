@@ -17,6 +17,9 @@ app.set("view engine", "ejs");
 //This route runs when a request is made to the /name path; then it calls the respondWithName function in the home controller
 app.get("/name/:myName", homeController.respondWithName);
 
+
+
+
 app.listen(port ,() => {
   chalkAnimation.rainbow(`Server running at http://localhost:${ app.get("port") }`);
 });

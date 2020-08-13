@@ -1,3 +1,4 @@
 exports.respondWithName = (req,res) => {
-  res.render("index");
-}
+  let paramsName = req.params.myName;//assign a local var to a req parameter
+  res.render("index", {name: paramsName});//pass local var to a rendered view
+};
